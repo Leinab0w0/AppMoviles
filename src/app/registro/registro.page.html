@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <div class="lista">
+      <h3>Asistencia</h3>
+      <ion-list *ngIf="asistencia && asistencia.length > 0">
+        <ion-item *ngFor="let asistenciaItem of asistencia">
+          <ion-label>
+            <h2>Código: {{ asistenciaItem.codigo }}</h2>
+            <p>Asignatura: {{ asistenciaItem.ramo }}</p>
+            <p>Alumno: {{ asistenciaItem.alumno }}</p>
+            <p>Fecha: {{ asistenciaItem.fecha }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <div *ngIf="!asistencia || asistencia.length === 0" class="empty-state">
+        <p>No hay datos de asistencia registrados.</p>
+  </div>
+</div>
+<button (click)="volver()" class="volver-button">Volver</button>
+</div>
+</ion-content>

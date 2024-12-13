@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+  <div class="contenedor2">
+    <footer id="footer2">
+      <div class="marco">
+        <div class="nombre">
+          <ion-icon name="person-outline" (click)="perfil()"></ion-icon>
+          <strong id="texto">{{ usuario?.nombre }} {{ usuario?.apellido }}</strong>
+        </div>
+        <img class="qricon" src="assets/imagenQR.jpg" alt="QR Imagen">
+        <div *ngIf="scannedResult" class="qr-result">
+          <p><strong>Resultado del QR:</strong> {{ scannedResult }}</p>
+        </div>
+        <button (click)="navigateRegistro()">Ver Asistencia</button>
+        <button (click)="startScan()">Iniciar Escaneo</button>
+      </div>
+    </footer>
+  </div>
+</ion-content>

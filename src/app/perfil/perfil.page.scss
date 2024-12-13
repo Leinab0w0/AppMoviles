@@ -1,0 +1,126 @@
+.perfil-container {
+  background: var(--background-image) no-repeat center fixed;
+  background-size: cover;
+  transition: background 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  min-height: 100vh;
+}
+
+.perfil-container ion-icon {
+  font-size: 6rem;
+  color: var(--icono);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--titulo-color);
+  transition: color 0.5s ease;
+}
+
+.perfil-item {
+  width: 99%; /* Ajusta el ancho de cada item */
+  background-color: var(--fondo-input); /* Fondo del elemento */
+  color: var(--input-text); /* Color del texto */
+  border: 1px solid var(--borde-color); /* Borde visible */
+  border-radius: 23px; /* Bordes redondeados para cada item */
+  padding: 16px; /* Espacio interno para el contenido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el elemento */
+  transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+.perfil-item strong {
+  color: var(--icono);
+}
+
+#tema {
+  color: var(--icono-tema);
+  position: absolute;
+  right: 20px;
+  top: calc(56px + 20px); /* Baja el botón debajo del header */
+  font-size: 1.5rem;
+}
+
+#tema:hover {
+  color: var(--icono-hover); /* Color en hover */
+}
+
+ion-content {
+  --background: var(--background-color); /* Personaliza el color de fondo */
+  padding: 0; /* Elimina el padding predeterminado para un mejor ajuste */
+}
+
+.perfil-container,
+h1,
+p {
+  color: var(--textos);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header-img {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  background-color: #ffffff;
+  
+}
+
+.custom-header {
+  --background: #ffffff; /* Fondo blanco */
+  padding: 0; /* Elimina el padding interno */
+  margin: 0; /* Elimina márgenes */
+  width: 100%; /* Asegura que cubra todo el ancho */
+}
+
+ion-toolbar {
+  --background: #ffffff; /* Permite que el fondo del ion-header se aplique correctamente */
+  padding: 0; /* Ajusta el padding para evitar espacios */
+}
+
+.contenedor, h1, p{
+  transition: background .5s ease, color .5s ease;
+}
+
+.contenedorDatos{
+  gap: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: var(--icono);
+  color: var(--textos);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 1.25rem;
+  padding: 10px 0;
+  width: 26%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background-color: var(--icono-hover);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+button:last-of-type {
+  background-color: var(--icono);
+  color: var(--textos);
+}
+
+button:last-of-type:hover {
+  background-color: var(--icono-hover);
+}

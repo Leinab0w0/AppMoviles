@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <div class="registro-contenedor">
+    <h1>Registrar Usuario</h1>
+
+    <input id="nombre" type="text" placeholder="Nombre" [(ngModel)]="nombre" required>
+    <input id="apellido" type="text" placeholder="Apellido" [(ngModel)]="apellido" required>
+    <input id="contrasena" type="text" placeholder="Rut" [(ngModel)]="rut" required>
+    <input id="nombre-usuario" type="text" placeholder="Nombre de usuario" [(ngModel)]="nombreUsuario" required>
+    <input id="correo" type="email" placeholder="Correo electrónico" [(ngModel)]="correo" required>
+    <input id="contrasena" type="password" placeholder="Contraseña" [(ngModel)]="contrasena" required>
+    <button id="registro-button" (click)="registrar()">Registrar</button>
+    <button (click)="volver()">Volver</button>
+  </div>
+</ion-content>

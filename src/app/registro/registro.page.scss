@@ -1,0 +1,163 @@
+.ion-padding {
+  background: var(--background-image) no-repeat center fixed;
+  background-size: cover;
+  transition: background 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+#tema {
+  color: var(--icono-tema);
+  position: absolute;
+  right: 20px;
+  top: calc(56px + 20px); /* Baja el botón debajo del header */
+  font-size: 1.5rem;
+}
+
+.lista {
+  max-height: 300px;
+  overflow-y: auto;  /* Activa el scroll vertical */
+  border: 2px solid #000000; /* Color y grosor del borde */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 16px; /* Espaciado interno */
+  margin-top: 20px; /* Espacio sobre el botón */
+  background-color: #f9f9f9; /* Color de fondo */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro se apilen verticalmente */
+  justify-content: flex-start; /* Alinea los elementos al principio */
+  height: 40vh; /* El 40% de la altura de la pantalla */
+  width: 80%; /* El 80% del ancho de la pantalla */
+  margin: 0 auto; /* Centra la lista horizontalmente */
+}
+
+/* Títulos dentro de .lista */
+.lista h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Párrafos dentro de .lista */
+.lista p {
+  margin: 8px 0;
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .lista {
+    width: 90%; /* Reduce el ancho a un 90% en pantallas medianas */
+    height: 40vh; /* Mantiene el 40% del alto de la pantalla */
+    padding: 12px; /* Reduce el padding */
+    margin-top: 15px; /* Reduce el margen superior */
+  }
+
+  .lista h3 {
+    font-size: 1.1rem; /* Ajusta el tamaño del título */
+  }
+
+  .lista p {
+    font-size: 0.95rem; /* Ajusta el tamaño de los párrafos */
+  }
+}
+
+@media (max-width: 480px) {
+  .lista {
+    width: 100%; /* Ocupa todo el ancho disponible en pantallas muy pequeñas */
+    height: 40vh; /* Mantiene el 40% del alto de la pantalla */
+    padding: 8px; /* Reduce aún más el padding */
+    margin-top: 10px; /* Reduce el margen superior */
+  }
+
+  .lista h3 {
+    font-size: 1rem; /* Ajusta el tamaño del título */
+  }
+
+  .lista p {
+    font-size: 0.85rem; /* Ajusta el tamaño de los párrafos en pantallas pequeñas */
+  }
+}
+
+.header-img {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  background-color: #ffffff;
+}
+
+.custom-header {
+  --background: #ffffff; /* Fondo blanco */
+  padding: 0; /* Elimina el padding interno */
+  margin: 0; /* Elimina márgenes */
+  width: 100%; /* Asegura que cubra todo el ancho */
+}
+
+ion-toolbar {
+  --background: #ffffff; /* Permite que el fondo del ion-header se aplique correctamente */
+  padding: 0; /* Ajusta el padding para evitar espacios */
+}
+
+#textolista {
+  color: #000000;
+}
+
+.volver-button {
+  background-color: var(--icono); 
+  color: var(--textos); 
+  width: 10%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 1.25rem; 
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  padding: 10px 0; 
+}
+
+.volver-button:hover {
+  background-color: var(--icono-hover); 
+  transform: scale(1.05); 
+}
+
+.volver-button:focus,
+.volver-button:active {
+  outline: none; 
+  box-shadow: none; 
+}
+
+@media (max-width: 768px) {
+  .volver-button {
+    width: 60%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .volver-button {
+    width: 50%; 
+  }
+}
+
+ion-content {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  height: 100%;
+}
+
+.inner-scroll {
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-y {
+  overflow-y: hidden;
+}

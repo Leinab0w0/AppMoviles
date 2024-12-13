@@ -1,0 +1,17 @@
+<ion-buttons slot="end">
+  <ion-icon src="/assets/{{icono}}.svg" id="tema-recuperar" (click)="cambiarTema()"></ion-icon>
+</ion-buttons>
+
+<ion-content class="ion-padding">
+  <div class="registro-contenedor">
+    <h1>Recuperar Contraseña</h1>
+    <form (ngSubmit)="recuperarContrasena()">
+      <input type="email" id="correo" placeholder="Correo electrónico" [(ngModel)]="correo" name="correo" required>
+      <input type="text" id="usuario" placeholder="Nombre de usuario" [(ngModel)]="usuario" name="usuario" required>
+      <input type="password" id="nueva-contrasena" placeholder="Nueva Contraseña" [(ngModel)]="nuevaContrasena" name="nuevaContrasena" required>
+      <input type="password" id="confirmar-contrasena" placeholder="Confirmar Contraseña" [(ngModel)]="confirmarContrasena" name="confirmarContrasena" required>
+      <button type="submit">Recuperar Contraseña</button>
+      <button type="button" (click)="volver()">Volver</button>
+    </form>
+  </div>
+</ion-content>

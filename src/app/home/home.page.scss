@@ -1,0 +1,161 @@
+.contenedor {
+  background: var(--background-image) no-repeat center fixed;
+  background-size: cover;
+  transition: background 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  min-height: 100vh;
+
+  ion-icon {
+    font-size: 6rem;
+    color: var(--icono);
+  }
+
+  input, button {
+    width: 90%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 1.25rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  input {    
+    background-color: var(--fondo-input);
+    color: var(--input-text);
+  }
+
+  input::placeholder {   
+    color: var(--textos);
+  }
+
+  button {
+    background-color: var(--icono);
+    color: var(--textos);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+    border-radius: 1.25rem; /* Bordes redondeados */
+    padding: 10px 0; /* Espaciado interno */
+  }
+
+  button:hover {
+    background-color: var(--icono-hover); /* Fondo más oscuro cuando el mouse pasa por encima */
+    transform: scale(1.05); /* Aumento de tamaño al pasar el cursor */
+  }
+
+  button:active {
+    transform: scale(1); /* Vuelve al tamaño original cuando se hace clic */
+  }
+}
+
+#tema {
+  color: var(--icono-tema);
+  position: absolute;
+  right: 20px;
+  top: calc(56px + 20px); /* Baja el botón debajo del header */
+  font-size: 1.5rem;
+}
+
+.contenedor, h1, p {
+  transition: background .5s ease, color .5s ease;
+}
+
+h1 {
+  color: var(--textos);
+  transition: color 0.3s ease; /* Añade una transición suave */
+}
+
+.header-img {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  background-color: #ffffff;
+}
+
+.custom-header {
+  --background: #ffffff; /* Fondo blanco */
+  padding: 0; /* Elimina el padding interno */
+  margin: 0; /* Elimina márgenes */
+  width: 100%; /* Asegura que cubra todo el ancho */
+}
+
+ion-toolbar {
+  --background: #ffffff; /* Permite que el fondo del ion-header se aplique correctamente */
+  padding: 0; /* Ajusta el padding para evitar espacios */
+}
+
+#logo {
+  font-size: 5rem;
+}
+
+.nombre {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex; /* Alinea el ícono y el texto horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 0.3rem; /* Espaciado proporcional entre elementos */
+}
+
+.nombre ion-icon {
+  font-size: 3.5em; /* Tamaño del ícono proporcional al contenedor */
+  color: #000;
+  cursor: pointer;
+}
+
+#texto {
+  font-size: 5.2rem; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+}
+
+/*        Modal  de los cojohns         */
+
+.ion-modal {
+  --background: var(--recuperacion); 
+  --backdrop-opacity: 0.5;
+}
+
+.contenedor-modal {
+  background-color: #d7f3f4; 
+  color:#d7f3f4;
+  border-radius: 20px; 
+  padding: 20px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 9%); 
+  max-width: 100%; 
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+  height: 163px;
+}
+
+.ion-modal {
+  --background: #d7f3f4; 
+  --color: #d7f0f4;        
+}
+
+/* Estilo del botón dentro del modal */
+.contenedor-modal button {
+  background-color: #ffffff; 
+  color: #343f41; 
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 30px;
+  cursor: pointer; 
+  margin-top: 20px;
+}
+
+/* Estilo del input dentro del modal */
+.contenedor-modal input {
+  background-color: #ffffff; 
+  color: #343f41;
+  border:#86bbd5; 
+  padding: 10px; 
+  border-radius:30px; 
+  width: 100%; 
+  margin-top: 10px; 
+}

@@ -1,0 +1,118 @@
+/* Estilo general*/
+.contenedor2 {
+  background: var(--background-image) no-repeat center fixed;
+  background-size: cover;
+  transition: background 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+/* Estilo para el marco*/
+.marco {
+  background-color: rgba(255, 255, 255, 0.667);
+  padding: 5%;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  height: 78vh;
+  max-width: 90vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo para el nombre*/
+.nombre {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  color: var(--textos);
+  transition: color 0.3s ease;
+}
+
+.nombre ion-icon {
+  font-size: 3.5em;
+  color: var(--textos);
+  cursor: pointer;
+}
+
+#texto {
+  font-size: 1.2rem;
+  color: var(--textos);
+}
+
+/* Estilo para el icono del tema */
+.theme-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: var(--textos);
+  cursor: pointer;
+}
+
+/* Estilo para el QR */
+.qricon {
+  display: block;
+  max-width: 80%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+  border-radius: 8px;
+}
+
+button {
+  background-color: var(--icono);
+  color: var(--textos);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+  border-radius: 1.25rem; /* Bordes redondeados */
+  padding: 14px 39px;
+  margin-top: -3px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: var(--icono-hover); /* Fondo más oscuro cuando el mouse pasa por encima */
+  transform: scale(1.05); /* Aumento de tamaño al pasar el cursor */
+}
+
+button:active {
+  transform: scale(1); /* Vuelve al tamaño original cuando se hace clic */
+}
+
+
+.custom-header {
+  --background: rgba(255, 255, 255, 0.2);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.header-img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --color: #ffffff;
+  padding: 0;
+}

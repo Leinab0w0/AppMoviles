@@ -1,0 +1,85 @@
+.registro-contenedor {
+  background: var(--background-image) no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  min-height: 100vh;
+
+  ion-icon {
+    font-size: 6rem;
+    color: var(--icono); /* El color del icono se adapta al tema */
+  }
+
+  input, button {
+    width: 90%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 1.25rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  input {
+    background-color: var(--fondo-input);
+    color: var(--textos); /* Asegura que el texto del input sea del color correcto */
+  }
+
+  input::placeholder {
+    color: var(--input-text); /* Color del placeholder */
+  }
+
+  button {
+    background-color: var(--icono); /* Color de fondo del botón según el tema */
+    color: var(--textos); /* Color de texto del botón según el tema */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+    border-radius: 1.25rem; /* Bordes redondeados */
+    padding: 10px 0; /* Espaciado interno */
+  }
+
+  button:hover {
+    background-color: var(--icono-hover); /* Fondo más oscuro cuando el mouse pasa por encima */
+    transform: scale(1.05); /* Aumento de tamaño al pasar el cursor */
+  }
+
+  button:active {
+    transform: scale(1); /* Vuelve al tamaño original cuando se hace clic */
+  }
+}
+
+#tema-registro {
+  color: var(--icono-tema); /* El color del ícono de cambio de tema se ajusta según el tema */
+  position: absolute;
+  right: 20px;
+  top: calc(56px + 20px); /* Baja el botón debajo del header */
+  font-size: 1.5rem;
+}
+
+.header-img {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  background-color: #ffffff;
+}
+
+.custom-header {
+  --background: #ffffff; /* Fondo blanco */
+  padding: 0; /* Elimina el padding interno */
+  margin: 0; /* Elimina márgenes */
+  width: 100%; /* Asegura que cubra todo el ancho */
+}
+
+ion-toolbar {
+  --background: #ffffff; /* Permite que el fondo del ion-header se aplique correctamente */
+  padding: 0; /* Ajusta el padding para evitar espacios */
+}
+
+h1 {
+  color: var(--textos);
+  transition: color 0.3s ease; /* Añade una transición suave */
+}

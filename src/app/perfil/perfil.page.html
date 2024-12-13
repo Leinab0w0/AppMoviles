@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="perfil-container">
+    <div class="usuario">
+      <h1>Perfil de Usuario</h1>
+      <div class="contenedorDatos">
+      <div class="perfil-item">
+        <strong>Nombre:</strong> {{ usuario.nombre }}
+      </div>
+      <div class="perfil-item">
+        <strong>Apellido:</strong> {{ usuario.apellido }}
+      </div>
+      <div class="perfil-item">
+        <strong>Rut:</strong> {{ usuario.rut }}
+      </div>
+      <div class="perfil-item">
+        <strong>Nombre de Usuario:</strong> {{ usuario.nombreUsuario }}
+      </div>
+      <div class="perfil-item">
+        <strong>Correo:</strong> {{ usuario.correo }}
+      </div>
+      </div>
+    </div>
+    <button type="button" (click)="volver()">Volver</button>
+  </div>
+</ion-content>
